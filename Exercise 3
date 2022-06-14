@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import messagebox
+#create tkinter window
+window= Tk()
+window.minsize(width=350, height=250) #fixing minimum size of the tkinter window
+#Set title as 'Tkinter'
+window.title('Tkinter')
+#Finding sum of two numbers
+l1=Label(window, text="Input 1")
+l1.grid(row=1, column=2)
+e1=Entry(window)
+e1.grid(row=1, column=3)
+l2=Label(window, text="Input 2")
+l2.grid(row=2, column=2)
+e2=Entry(window)
+e2.grid(row=2, column=3)
+def FindSum():
+    sum=int(e1.get())+int(e2.get())
+    messagebox.showinfo("sum", sum)
+b1=Button(window, text="Find Sum", command=FindSum)
+b1.grid(row=3,column=3)
+window.mainloop()
