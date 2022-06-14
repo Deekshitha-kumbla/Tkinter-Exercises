@@ -1,0 +1,14 @@
+from tkinter import *
+from tkinter import messagebox
+#create tkinter window
+window= Tk()
+window.minsize(width=350, height=250) #fixing minimum size of the tkinter window
+#Set title as 'Tkinter'
+window.title('Tkinter')
+#Displaying list of elements in the listbox
+lbox=Listbox(window)
+lbox.pack()
+list=["Abc","cat",1,5]
+for i in list:
+    lbox.insert(END,i)
+window.mainloop()
