@@ -1,0 +1,13 @@
+from tkinter import *
+#create tkinter window
+window= Tk()
+#fix the tkinter window size by 350x250
+window.geometry("350x250")
+#Set title as 'Tkinter'
+window.title('Tkinter')
+#Displaying image using canvas
+canvas = Canvas(window, width = 250, height = 300)
+canvas.pack()
+img = PhotoImage(file="img.png")
+canvas.create_image(10,10, anchor=NW, image=img)
+window.mainloop()
