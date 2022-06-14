@@ -1,0 +1,21 @@
+from tkinter import *
+#create tkinter window
+window= Tk()
+#fix the tkinter window size by 350x250
+window.geometry("350x250")
+#Set title as 'Tkinter'
+window.title('Tkinter')
+#Create some widgets
+l1=Label(window, text= "Tkinter Exercise 1", font= ('Helvetica 12 bold')) #label
+l1.pack()
+e1=Entry(window) #input box
+e1.place(x=30, y=50)
+b1=Button(window,text="Apply", bg='red') #button
+b1.place(x=50, y=70)
+ch1=Checkbutton(window,text="Female") #checkbox
+ch1.place(x=100, y=80)
+rb1=Radiobutton(window, text="Male") #radiobutton
+rb1.place(x=120, y=130)
+l1=Listbox(window) #listbox
+l1.place(x=150, y=150)
+window.mainloop()
